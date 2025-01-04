@@ -9,6 +9,8 @@ lang: en
 
 Next, let's connect the frontend we made in [part 2](/en/part2) to our own backend.
 
+NB. It is critical to the next section that you continue to run the backend you built for the "notes" application in Part 3, section a (the previous section). Without this, the following demos will not work as expected. You can handle this as you see fit but a simple approach will be to open the demo you built in section a in one Visual Studio Code window, and the notes app from at least Exercise 2.7 in another Visual Studio Code window (achieved simply by clicking File > New Window).
+
 In the previous part, the frontend could ask for the list of notes from the json-server we had as a backend, from the address <http://localhost:3001/notes>.
 Our backend has a slightly different URL structure now, as the notes can be found at <http://localhost:3001/api/notes>. Let's change the attribute __baseUrl__ in the frontend notes app at <i>src/services/notes.js</i> like so:
 
